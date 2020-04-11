@@ -10,13 +10,22 @@ Step:
 
 2. Copy the folder to your desired directory.
     If you're a *NIX user and a terminal warrior, use the command below.
+    ```
+    $ cp tesLumen/* /your/desired/directory/path/folderName
+    ```
 
-    ```cp tesLumen/* /your/desired/directory/path/folderName```
+    or clone from github
+    ```
+    $ git clone https://github.com/yanuz93/cobaLumen /your/desired/directory/path/folderName
+    ```
+
 
 3. Go to the directory.
     If you're a *NIX user and a terminal warrior, use the command below.
-    
-    ```cd /your/desired/directory/path/folderName```
+
+    ```
+    $ cd /your/desired/directory/path/folderName
+    ```
 
 4. Open the `.env` file and edit using your local configuration. Make sure you
    have created the database before and the user has all privileges on the
@@ -46,11 +55,16 @@ Step:
 
 5. Install all required packages using `composer install`
 
-6. Run the database migration using artisan command
-    ```php artisan migrate:fresh```
+6. Run the database migration and seeder using artisan command
+    ```
+    $ php artisan migrate:fresh --seed
+    ```
 
 7. Run the PHP server.
     ```
-    php -S localhost:{port} public
+    $ php -S localhost:{port} -t public
     ```
 
+To show the product detail, go to `http://localhost:{port}/product/{id}` in your web browser. It'll show you the product with given id if exists. (id has to be a number)
+
+To show the sales (transaction) report for all product via browser, go to go to `http://localhost:{port}/product/report`.

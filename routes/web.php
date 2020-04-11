@@ -20,3 +20,7 @@ $router->get('/', function () use ($router) {
 $router->get('product/{product:[0-9]+}', [
     'as' => 'product', 'uses' => 'ProductController@show'
 ]);
+
+$router->get('product/report', [
+    'as' => 'sales_report', 'uses' => 'ProductController@reportAllSales'
+]);
