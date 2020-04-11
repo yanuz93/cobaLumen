@@ -6,7 +6,7 @@ Prerequisities:
 
 Step:
 1. You need `composer` to be installed first.
-    If you haven't installed it before, please follow the instruction given [here](https://getcomposer.org/doc/00-intro.md).
+    If you haven't installed it before, please follow the instruction given [here](https://getcomposer.org/doc/00-intro.md). I, personally, recommend to install composer globally.
 
 2. Copy the folder to your desired directory.
     If you're a *NIX user and a terminal warrior, use the command below.
@@ -53,7 +53,16 @@ Step:
     QUEUE_CONNECTION=sync
     ```
 
-5. Install all required packages using `composer install`
+5. Install all required packages using
+    ```
+    $ composer install
+    ```
+    
+    if the composer was installed globally or 
+    ```
+    $ php /path/to/composer.phar
+    ```
+    if installed locally.
 
 6. Run the database migration and seeder using artisan command
     ```
