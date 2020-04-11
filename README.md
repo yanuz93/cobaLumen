@@ -9,11 +9,13 @@ Step:
     If you haven't installed it before, please follow the instruction given [here](https://getcomposer.org/doc/00-intro.md).
 
 2. Copy the folder to your desired directory.
-    If you're a *NIX user and a terminal warrior, use the command below
+    If you're a *NIX user and a terminal warrior, use the command below.
+
     ```cp tesLumen/* /your/desired/directory/path/folderName```
 
 3. Go to the directory.
-    If you're a *NIX user and a terminal warrior, use the command below
+    If you're a *NIX user and a terminal warrior, use the command below.
+    
     ```cd /your/desired/directory/path/folderName```
 
 4. Open the `.env` file and edit using your local configuration. Make sure you
