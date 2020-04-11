@@ -11,7 +11,7 @@ Step:
 2. Copy the folder to your desired directory.
     If you're a *NIX user and a terminal warrior, use the command below.
     ```
-    $ cp tesLumen/* /your/desired/directory/path/folderName
+    $ cp aplikasi/* /your/desired/directory/path/folderName
     ```
 
     or clone from github
