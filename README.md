@@ -1,24 +1,50 @@
-# Lumen PHP Framework
+Prerequisities:
+- PHP version =>7.2
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- mbstring PHP Extension
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+Step:
+1. You need `composer` to be installed first.
+    If you haven't installed it before, please follow the instruction given here.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+2. Copy the folder to your desired directory.
+    If you're a *NIX user and a terminal warrior, use the command below
+    `cp tesLumen/* /your/desired/directory/path/folderName`
 
-## Official Documentation
+3. Go to the directory.
+    If you're a *NIX user and a terminal warrior, use the command below
+    `cd /your/desired/directory/path/folderName`
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+4. Open the .env file and edit using your local configuration. Make sure you
+   have created the database before and the user has all privileges on the
+   database.
 
-## Contributing
+    ```
+    APP_NAME=Lumen
+    APP_ENV=local
+    APP_KEY='ThisIsApplicationKey'
+    APP_DEBUG=true
+    APP_URL=http://localhost:{port}
+    APP_TIMEZONE=UTC
+    
+    LOG_CHANNEL=stack
+    LOG_SLACK_WEBHOOK_URL=
+    
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE={database_name}
+    DB_USERNAME={database_user}
+    DB_PASSWORD={database_password}
+    
+    CACHE_DRIVER=file
+    QUEUE_CONNECTION=sync
+    ```
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. Install all required packages using `composer install`
 
-## Security Vulnerabilities
+6. Run the database migration using artisan command
+    `php artisan migrate:fresh`
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
