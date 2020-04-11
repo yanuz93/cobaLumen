@@ -6,17 +6,17 @@ Prerequisities:
 
 Step:
 1. You need `composer` to be installed first.
-    If you haven't installed it before, please follow the instruction given here.
+    If you haven't installed it before, please follow the instruction given [here](https://getcomposer.org/doc/00-intro.md).
 
 2. Copy the folder to your desired directory.
     If you're a *NIX user and a terminal warrior, use the command below
-    `cp tesLumen/* /your/desired/directory/path/folderName`
+    ```cp tesLumen/* /your/desired/directory/path/folderName```
 
 3. Go to the directory.
     If you're a *NIX user and a terminal warrior, use the command below
-    `cd /your/desired/directory/path/folderName`
+    ```cd /your/desired/directory/path/folderName```
 
-4. Open the .env file and edit using your local configuration. Make sure you
+4. Open the `.env` file and edit using your local configuration. Make sure you
    have created the database before and the user has all privileges on the
    database.
 
@@ -45,6 +45,10 @@ Step:
 5. Install all required packages using `composer install`
 
 6. Run the database migration using artisan command
-    `php artisan migrate:fresh`
+    ```php artisan migrate:fresh```
 
+7. Run the PHP server.
+    ```
+    php -S localhost:{port} public
+    ```
 
