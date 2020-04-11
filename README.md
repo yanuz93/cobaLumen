@@ -1,10 +1,13 @@
-Prerequisities:
+## PT ABC App
+This application is built using Lumen, a PHP microframework derivated from Laravel.
+
+### Prerequisities:
 - PHP version =>7.2
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - mbstring PHP Extension
 
-Step:
+### Step:
 1. You need `composer` to be installed first.
     If you haven't installed it before, please follow the instruction given [here](https://getcomposer.org/doc/00-intro.md). I, personally, recommend to install composer globally.
 
